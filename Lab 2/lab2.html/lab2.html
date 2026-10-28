@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Profile Page</title>
+</head>
+<body>
+
+    <!-- Semantic Tag: <header> -->
+    <header>
+        <h1>Welcome to My Personal Profile</h1>
+        <p>Lab Exercise 2: Building a Structured Webpage</p>
+    </header>
+
+    <!-- Semantic Tag: <nav> -->
+    <nav>
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#profile-table">Profile Details</a></li>
+            <li><a href="#contact-form">Contact Form</a></li>
+        </ul>
+    </nav>
+
+    <!-- Semantic Tag: <section> -->
+    <section id="about">
+        <!-- Semantic Tag: <article> -->
+        <article>
+            <h2>About Me</h2>
+            <p>Hello! I am a student learning web design and semantic HTML structures. This webpage demonstrates tables, form controls, and modern page structuring.</p>
+        </article>
+    </section>
+
+    <!-- Requirement 1: Table with at least 3 rows and 3 columns -->
+    <section id="profile-table">
+        <h2>Personal Information</h2>
+        <table border="1" cellpadding="8" cellspacing="0">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Occupation</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Ben</td>
+                    <td>25</td>
+                    <td>Student</td>
+                </tr>
+                <tr>
+                    <td>Alex Smith</td>
+                    <td>24</td>
+                    <td>Software Developer</td>
+                </tr>
+                <tr>
+                    <td>Taylor Wong</td>
+                    <td>22</td>
+                    <td>Data Analyst</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Requirement 2: Simple Form (Text, Email, Radio, Checkboxes, Submit) -->
+    <section id="contact-form">
+        <h2>User Registration & Survey Form</h2>
+        <form action="#" method="post">
+            <!-- Text Input: Name -->
+            <p>
+                <label for="name">Full Name:</label><br>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            </p>
+
+            <!-- Text/Email Input: Email -->
+            <p>
+                <label for="email">Email Address:</label><br>
+                <input type="email" id="email" name="email" placeholder="example@email.com" required>
+            </p>
+
+            <!-- Radio Buttons: Gender -->
+            <fieldset>
+                <legend>Gender</legend>
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male">Male</label>
+
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other">Other</label>
+            </fieldset>
+
+            <!-- Checkboxes: Favorite Hobbies -->
+            <fieldset>
+                <legend>Favorite Hobbies (Select all that apply)</legend>
+                <input type="checkbox" id="coding" name="hobbies" value="coding">
+                <label for="coding">Coding</label><br>
+
+                <input type="checkbox" id="movies" name="hobbies" value="movies">
+                <label for="movies">Watching Movies</label><br>
+
+                <input type="checkbox" id="gaming" name="hobbies" value="gaming">
+                <label for="gaming">Gaming</label><br>
+
+                <input type="checkbox" id="reading" name="hobbies" value="reading">
+                <label for="reading">Reading</label>
+            </fieldset>
+
+            <!-- Submit Button -->
+            <p>
+                <button type="submit">Submit Form</button>
+            </p>
+        </form>
+    </section>
+
+    <!-- Semantic Tag: <footer> -->
+    <footer>
+        <hr>
+        <p>&copy; 2026 Personal Profile Page | Built for Lab Exercise 2</p>
+    </footer>
+
+</body>
+</html>
