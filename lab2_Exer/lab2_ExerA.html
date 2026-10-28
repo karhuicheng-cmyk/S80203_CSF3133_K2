@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Programming Workshop</title>
+    </head>
+    <body>
+        <header>
+            <h1>Programming Workshop</h1>   
+            <p>Empowering the next generation of developers through hands-on learning.</p>            
+        </header>
+        <nav><a href="#schedule">Schedule</a> |
+             <a href="#register">register</a> | 
+             <a href="#about">about </a>
+        </nav>     
+
+    <hr>
+
+    <!--about section-->
+    <section id="about">
+        <h2>About the Event</h2>
+        
+        <article>
+            <h3>Keynote Speaker: Dr. Ali</h3>
+            <p>Dr. Ali is a leading AI researcher with over 15 years of industry experience. She will be speaking about the future of automated code generation and how students can adapt to modern development tools.</p>
+        </article>
+
+        <article>
+            <h3>Activity Feature: Core Hackathon Challenge</h3>
+            <p>Put your skills to the test in our 3-hour rapid prototyping challenge. Students will work in groups to solve real-world community problems using HTML, CSS, and JavaScript, with exciting prizes for the top teams.</p>
+        </article> 
+    </section>
+
+    <hr>
+    <!--schedule section-->
+    <section id="schedule">
+        <h2>Event Schedule</h2>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Time</th>
+                    <th>Activity</th>
+                    <th>Venue</th>
+                    <th>Person in Charge</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!--row 1-->
+                <tr>
+                    <td>09:00 AM - 10:00 AM</td>
+                    <td>Opening Ceremony & Keynote Speech</td>
+                    <td>Main Auditorium</td>
+                    <td>Dr. Ali</td>
+                </tr>
+                <!--row 2-->
+                <tr>
+                    <td>10:00 AM - 11:30 AM</td>
+                    <td>Hands-on Web Development Session I</td>
+                    <td rowspan="2">Lab 4, Block C</td>
+                    <td>Prof. Alan</td>
+                </tr>
+                <!--row 3-->
+                <tr>
+                    <td>11:30 AM - 01:00 PM</td>
+                    <td>Hands-on Web Development Session II</td>
+                    <td>Dr. Grace</td>
+                </tr>
+                <!--row 4-->
+                <tr>
+                    <td>01:00 PM - 02:00 PM</td>
+                    <td colspan="3" align="center"><strong>Lunch Break & Networking Session</strong></td>
+                </tr>
+                <!--row 5-->
+                <tr>
+                    <td>02:00 PM - 03:30 PM</td>
+                    <td>Career & Resume Building Talk</td>
+                    <td>Seminar Room 1</td>
+                    <td>Mr. Steve</td>
+                </tr>
+                <!--row 6-->
+                <tr>
+                    <td>03:30 PM - 05:00 PM</td>
+                    <td>Hackathon Pitching & Closing Ceremony</td>
+                    <td>Main Auditorium</td>
+                    <td>Faculty Committee</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <hr>
+
+    <!--register section-->
+     <section id="register">
+        <h2>Registration Form</h2>
+        <form action="register.html" method="post">
+            
+            <!--Text Inputs-->
+            <p>
+                <label for="fullname">Full Name:</label><br>
+                <input type="text" id="fullname" name="fullname" required>
+            </p>
+            
+            <p>
+                <label for="matric">Matric Number:</label><br>
+                <input type="text" id="matric" name="matric" required>
+            </p>
+            
+            <p>
+                <label for="email">E-mail Address:</label><br>
+                <input type="email" id="email" name="email" required>
+            </p>
+
+            <!--Radio Buttons with same 'name'-->
+            <p>
+                <label>Year of Study:</label><br>
+                <input type="radio" id="year1" name="year_of_study" value="Year 1">
+                <label for="year1">Year 1</label><br>
+                
+                <input type="radio" id="year2" name="year_of_study" value="Year 2">
+                <label for="year2">Year 2</label><br>
+                
+                <input type="radio" id="year3" name="year_of_study" value="Year 3">
+                <label for="year3">Year 3</label><br>
+                
+                <input type="radio" id="year4" name="year_of_study" value="Year 4">
+                <label for="year4">Year 4</label><br>
+            </p>
+
+            <!--Checkboxes-->
+            <p>
+                <label>Sessions you want to join (Select all that apply):</label><br>
+                <input type="checkbox" id="session1" name="sessions" value="Keynote">
+                <label for="session1">Keynote Speech</label><br>
+                
+                <input type="checkbox" id="session2" name="sessions" value="Workshop">
+                <label for="session2">Web Development Workshops</label><br>
+                
+                <input type="checkbox" id="session3" name="sessions" value="Hackathon">
+                <label for="session3">Hackathon Pitching</label><br>
+            </p>
+
+            <!--Drop-down list-->
+            <p>
+                <label for="programme">Programme / Faculty:</label><br>
+                <select id="programme" name="programme">
+                    <option value="CS">Bachelor of Computer Science</option>
+                    <option value="SE">Bachelor of Software Engineering</option>
+                    <option value="IS">Bachelor of Information Systems</option>
+                    <option value="DS">Bachelor of Data Science</option>
+                </select>
+            </p>
+
+            <!--Submit Button-->
+            <p>
+                <input type="submit" value="Submit Registration">
+            </p>
+
+        </form>
+    </section>
+
+     <hr>
+
+    <!--footer-->
+
+    <footer>
+        <p>Organised by the Faculty Computer Science Club</p>
+        <p>&copy; 2026 Faculty Computer Science Club. All rights reserved.</p>
+    </footer>
+    </body>
+</html>
