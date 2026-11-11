@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab Exercise 4 - Responsive Webpage</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Internal CSS  -->
+    <style>
+        header h1 {
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+        }
+
+        .section-tagline {
+            text-decoration: overline;
+            color: #4a5568;
+            font-size: 0.95rem;
+            margin-bottom: 1rem;
+        }
+
+        .badge {
+            display: inline-block;
+            background-color: #2b6cb0;
+            color: #ffffff;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+            <h1>WebTech Hub</h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#media">Media</a></li>
+                    <li><a href="#articles">Articles</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- About Section -->
+        <section id="about" class="content-section">
+            <h2 class="heading-underlined">Welcome to WebTech Hub</h2>
+            <p class="section-tagline">Exploring modern web standards and design practices</p>
+            <p>
+                This webpage demonstrates structured semantic HTML5 layout combined with responsive CSS styling, 
+                rich media integration, and accessible form controls.
+            </p>
+        </section>
+
+        <!-- Media Section -->
+        <section id="media" class="content-section">
+            <h2 class="heading-underlined">Featured Media</h2>
+            <p>Watch an overview of modern front-end web design workflows below.</p>
+            
+            <figure class="video-container">
+                <video controls width="100%" poster="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80">
+                    <!-- Standard royalty-free sample MP4 for testing -->
+                    <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <figcaption>Video 1.1: Responsive video player with synchronized controls and styling.</figcaption>
+            </figure>
+        </section>
+
+        <!-- Articles Section -->
+        <section id="articles" class="content-section">
+            <h2 class="heading-underlined">Latest Updates</h2>
+            
+            <article class="card">
+                <span class="badge">Guide</span>
+                <h3>Semantic HTML Elements</h3>
+                <p>
+                    Semantic elements clearly describe their meaning to both the browser and the developer. 
+                    They improve document accessibility and search engine readability.
+                </p>
+                <p class="old-price">Previous edition outdated: <span class="strike-text">HTML4 Guidelines</span></p>
+            </article>
+
+            <article class="card">
+                <span class="badge">Architecture</span>
+                <h3>CSS Pseudo-Classes</h3>
+                <p>
+                    Dynamic pseudo-classes like <code>:hover</code>, <code>:visited</code>, and <code>:active</code> 
+                    give immediate visual cues to users interacting with links and controls.
+                </p>
+            </article>
+        </section>
+
+        <!-- Interactive Contact Section -->
+        <section id="contact" class="content-section">
+            <h2 class="heading-underlined">Get in Touch</h2>
+            <p>Fill out the registration form below to join our developer newsletter.</p>
+
+            <form action="#" method="post" class="styled-form">
+                <!-- Name Field -->
+                <div class="form-group">
+                    <label for="fullName">Full Name:</label>
+                    <input type="text" id="fullName" name="fullName" placeholder="e.g. Alex Morgan" required>
+                </div>
+
+                <!-- Email Field -->
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" placeholder="e.g. alex@example.com" required>
+                </div>
+
+                <!-- Gender Radio Buttons -->
+                <div class="form-group">
+                    <label class="group-label">Gender:</label>
+                    <div class="inline-options">
+                        <label class="radio-label">
+                            <input type="radio" name="gender" value="male" required> Male
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="gender" value="female"> Female
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="gender" value="other"> Other
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Favorite Hobbies Checkboxes -->
+                <div class="form-group">
+                    <label class="group-label">Favorite Hobbies:</label>
+                    <div class="inline-options">
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="hobbies" value="coding"> Coding
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="hobbies" value="movies"> Watching Movies
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="hobbies" value="gaming"> Gaming
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="hobbies" value="reading"> Reading
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Submit Button -->
+                <div class="form-group">
+                    <button type="submit" class="submit-btn">Submit Information</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; 2026 WebTech Hub. All Rights Reserved.</p>
+            <p><a href="#about" class="footer-link">Back to Top &uarr;</a></p>
+        </div>
+    </footer>
+
+</body>
+</html>
