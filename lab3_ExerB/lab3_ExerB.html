@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Ticket Booking</title>
+</head>
+<body>
+    <!--
+        Error 1 (Line 1): Incomplete <!DOCTYPE>; corrected to <!DOCTYPE html>.
+        Error 2 (Line 9): Overlapping tags <span>...</h1></span>; fixed nesting to <span>...</span></h1>.
+        Error 3 (Line 11 & 36): Inline <span id="content"> wrapped block elements; changed to <div id="content">.
+        Error 4 (Line 13): Unescaped '</html> tags removed.
+    -->
+
+    <!-- Header Section -->
+    <div id="header">
+        <h1>e-Ticket <span>Your Campus Cinema</span></h1>
+    </div>
+
+    <!-- Main Booking Content Section -->
+    <div id="content">
+        <h2>Book Your Ticket</h2>
+        <p>Promotion: tickets &lt; RM10 for students &amp; staff!</p>
+
+        <!-- Booking Form with Dynamic Ticket Count and Price Calculation -->
+        <form action="booking.php" oninput="total.value = Number(adult.value) + Number(child.value); price.value = (Number(adult.value) * 12) + (Number(child.value) * 8);">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required autofocus><br>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email"><br>
+
+            <!-- Added Phone Number Input -->
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" placeholder="012-3456789" required><br>
+
+            <label for="date">Show date:</label>
+            <input type="date" id="date" name="date"><br>
+
+            <!-- Added Show Time Input -->
+            <label for="time">Show time:</label>
+            <input type="time" id="time" name="time"><br>
+
+            <label for="movie">Movie:</label>
+            <input id="movie" name="movie" list="movies"><br>
+            <datalist id="movies">
+                <option value="Space Rangers">
+                <option value="Kampung Comedy">
+            </datalist>
+
+            <label for="adult">Adult tickets (RM 12):</label>
+            <input type="number" id="adult" name="adult" min="0" value="0"><br>
+
+            <label for="child">Child tickets (RM 8):</label>
+            <input type="number" id="child" name="child" min="0" value="0"><br>
+
+            <label for="rating">Rate our service:</label>
+            <input type="range" id="rating" name="rating" min="1" max="5"><br>
+
+            Total tickets: <output name="total" for="adult child">0</output><br>
+            <!-- Added Second Output for Total Price -->
+            Total price: RM <output name="price" for="adult child">0</output><br>
+
+            <input type="submit" value="Book Now">
+        </form>
+    </div>
+
+    <!-- Added Sidebar Section: Now Showing -->
+    <div id="sidebar">
+        <h2>Now Showing</h2>
+        <ul>
+            <li><strong>Space Rangers</strong> <span>(PG-13)</span> - <a href="#trailer1">Watch Trailer</a></li>
+            <li><strong>Kampung Comedy</strong> <span>(U)</span> - <a href="#trailer2">Watch Trailer</a></li>
+            <li><strong>Midnight Mystery</strong> <span>(16)</span> - <a href="#trailer3">Watch Trailer</a></li>
+        </ul>
+    </div>
+
+    <!-- Footer Section -->
+    <div id="footer">
+        <p>&copy; 2026 CineKampus. All rights reserved.</p>
+        <p>e-Ticket&reg; &ndash; Campus Cinema &lt; RM10 every Tuesday &amp; weekend specials!</p>
+    </div>
+
+</body>
+</html>
