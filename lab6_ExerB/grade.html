@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grade Calculator</title>
+  <!-- Link external CSS file -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main class="container">
+    <h2>Student Grade Calculator</h2>
+
+    <!-- Form with return checkMark() to prevent page reload -->
+    <form name="gradeForm" onsubmit="return checkMark()">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name"><br>
+
+      <label for="mark">Mark (0-100):</label>
+      <input type="text" id="mark" name="mark"><br>
+
+      <button type="submit">Check Grade</button>
+      <!-- Button to generate a random mark between 0 and 100 -->
+      <button type="button" onclick="randomMark()">Random Mark</button>
+    </form>
+
+    <!-- Display Grade Result and Checked Timestamp -->
+    <p id="result"></p>
+    <p id="checkedTime"></p>
+
+    <!-- Button and Container for Grade Reference Table -->
+    <button type="button" onclick="showTable()">Show Grade Table</button>
+    <div id="tableContainer"></div>
+  </main>
+
+  <!-- Link external JavaScript file -->
+  <script src="grade.js"></script>
+</body>
+</html>
