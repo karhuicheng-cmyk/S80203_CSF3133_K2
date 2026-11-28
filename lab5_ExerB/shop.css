@@ -1,0 +1,110 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background-image: url("paper.jpg");
+  background-repeat: no-repeat;
+  background-position: right bottom; 
+  margin: 0;
+  padding: 0;
+}
+
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+nav li {
+  float: left;
+}
+
+nav li a {
+  display: block;
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #04AA6D;
+}
+
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("header-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+h1 {
+  font-family: 'Merriweather', serif;
+  margin: 0;
+}
+
+/* Add a clean white card background to main so text is easy to read */
+main {
+  width: 90%;
+  max-width: 900px;
+  margin: 20px auto;
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 20px;
+  border-radius: 8px;
+}
+
+/* Give odd table rows a solid white background */
+#products tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+
+p {
+  line-height: 1.6;
+}
+
+#products {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 20px;
+}
+
+#products td, #products th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#products tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#products tr:hover {
+  background-color: #ddd;
+}
+
+#products th {
+  background-color: #04AA6D;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+#products .price {
+  text-align: right;
+}
+
+footer {
+  background-color: #f1f1f1;
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+}
