@@ -1,0 +1,129 @@
+/* General Page Styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f6f9;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+/* Header Styling */
+header {
+  background-color: #1B4F72;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0 0 8px 0;
+}
+
+header p {
+  margin: 0;
+}
+
+/* Main Content Container */
+main {
+  width: 90%;
+  max-width: 850px;
+  margin: 20px auto;
+}
+
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Input and Buttons */
+input[type="text"] {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin: 0 8px;
+}
+
+button {
+  padding: 10px 16px;
+  background-color: #2874A6;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 6px;
+}
+
+button:hover {
+  background-color: #1B4F72;
+}
+
+/* Choices Display Layout */
+.choices {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.choice-box {
+  text-align: center;
+}
+
+.choice-box img {
+  width: 120px;
+  height: 120px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  padding: 8px;
+}
+
+.vs-text {
+  font-size: 20px;
+  font-weight: bold;
+  color: #666;
+}
+
+/* Result and Scoreboard */
+#result {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.scoreboard {
+  font-size: 16px;
+}
+
+/* History Table Styling */
+#history {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 15px;
+}
+
+#history th, #history td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+#history th {
+  background-color: #1B4F72;
+  color: white;
+}
+
+#history tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Footer Styling */
+footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #e9ecef;
+  color: #555;
+  margin-top: 20px;
+}
